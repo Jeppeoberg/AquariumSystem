@@ -5,6 +5,8 @@ import AquariumSystem.interfaces.Fish;
 import AquariumSystem.model.WaterQuality;
 import AquariumSystem.simpleaquarium.SimpleFish;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.util.List;
 
@@ -68,12 +70,12 @@ public class ConsoleUI {
     }
 
     private void showLastWaterChange() {
-        var date = controller.getLastWaterChange();
+        LocalDateTime date = controller.getLastWaterChange();
 
         if (date == null) {
             System.out.println("Ingen vandskift registreret endnu.");
         } else {
-            System.out.println("Sidste vandskift: " + date);
+            System.out.println("Sidste vandskift: " + date.format(DateTimeFormatter.ofPattern("HH:mm")));
         }
     }
 

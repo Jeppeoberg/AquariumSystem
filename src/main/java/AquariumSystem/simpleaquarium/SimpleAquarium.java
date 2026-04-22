@@ -2,6 +2,7 @@ package AquariumSystem.simpleaquarium;
 import AquariumSystem.interfaces.Aquarium;
 import AquariumSystem.model.WaterQuality;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class SimpleAquarium implements Aquarium {
     private LocalDateTime lastWaterChange;
@@ -14,7 +15,8 @@ public class SimpleAquarium implements Aquarium {
     @Override
     public void registerWaterChange(String note, WaterQuality quality) {
         this.lastWaterChange = LocalDateTime.now();
-        System.out.println("Vandet er skiftet" + note);
+        note = lastWaterChange.format(DateTimeFormatter.ofPattern("HH:mm"));
+        System.out.println("Vandet er skiftet " + note);
     }
     @Override
     public LocalDateTime getLastWaterChange() {
