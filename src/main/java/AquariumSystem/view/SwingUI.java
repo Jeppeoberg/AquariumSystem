@@ -103,6 +103,7 @@ public class SwingUI {
     private void changeWater() {
         try {
             String note = JOptionPane.showInputDialog(frame, "Note:");
+            int numberOfChar = 60;
 
             if (note == null) return;
 
@@ -118,7 +119,7 @@ public class SwingUI {
             );
 
             if (quality != null) {
-                controller.changeWater(note, quality);
+                controller.changeWater(note, quality, numberOfChar);
                 print("Vand skiftet (" + quality + ")");
             }
 
@@ -133,9 +134,10 @@ public class SwingUI {
         try {
             Fish fish = (Fish) fishDropdown.getSelectedItem();
             String note = JOptionPane.showInputDialog("Sundhedsnote:");
+            int numberOfChar = 30;
 
             if (fish != null && note != null) {
-                controller.registerFishHealth(fish, note);
+                controller.registerFishHealth(fish, note, numberOfChar);
                 print("Health check på " + fish.getName());
             }
         } catch (ValidationException e) {
