@@ -1,4 +1,4 @@
-package Lesson34.AquariumSystem.interfaces;
+package AquariumSystem.interfaces;
 
 public interface AquariumFactory {
     Aquarium createAquarium();

@@ -1,6 +1,6 @@
 package AquariumSystem;
 
-import Lesson34.AquariumSystem.simpleaquarium.SimpleFish;
+import AquariumSystem.simpleaquarium.SimpleFish;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

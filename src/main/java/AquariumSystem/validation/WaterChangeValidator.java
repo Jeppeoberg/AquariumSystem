@@ -1,4 +1,4 @@
-package Lesson34.AquariumSystem.validation;
+package AquariumSystem.validation;
 
 
 public class WaterChangeValidator {

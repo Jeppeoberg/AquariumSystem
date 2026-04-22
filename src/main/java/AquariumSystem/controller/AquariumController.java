@@ -1,11 +1,11 @@
-package Lesson34.AquariumSystem.controller;
+package AquariumSystem.controller;
 
-import Lesson34.AquariumSystem.file.FileLogger;
-import Lesson34.AquariumSystem.interfaces.Aquarium;
-import Lesson34.AquariumSystem.interfaces.Fish;
-import Lesson34.AquariumSystem.model.WaterQuality;
-import Lesson34.AquariumSystem.validation.FishValidator;
-import Lesson34.AquariumSystem.validation.WaterChangeValidator;
+import AquariumSystem.file.FileLogger;
+import AquariumSystem.interfaces.Aquarium;
+import AquariumSystem.interfaces.Fish;
+import AquariumSystem.model.WaterQuality;
+import AquariumSystem.validation.FishValidator;
+import AquariumSystem.validation.WaterChangeValidator;
 
 import java.util.ArrayList;
 import java.util.List;

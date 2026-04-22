@@ -1,9 +1,9 @@
-package Lesson34.AquariumSystem.view;
+package AquariumSystem.view;
 
-import Lesson34.AquariumSystem.controller.AquariumController;
-import Lesson34.AquariumSystem.interfaces.Fish;
-import Lesson34.AquariumSystem.model.WaterQuality;
-import Lesson34.AquariumSystem.simpleaquarium.SimpleFish;
+import AquariumSystem.controller.AquariumController;
+import AquariumSystem.interfaces.Fish;
+import AquariumSystem.model.WaterQuality;
+import AquariumSystem.simpleaquarium.SimpleFish;
 
 import java.util.Scanner;
 import java.util.List;

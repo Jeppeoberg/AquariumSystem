@@ -1,11 +1,11 @@
-package Lesson34.AquariumSystem.app;
+package AquariumSystem.app;
 
-import Lesson34.AquariumSystem.interfaces.Fish;
-import Lesson34.AquariumSystem.simpleaquarium.*;
-import Lesson34.AquariumSystem.controller.AquariumController;
-import Lesson34.AquariumSystem.view.ConsoleUI;
-import Lesson34.AquariumSystem.interfaces.Aquarium;
-import Lesson34.AquariumSystem.view.SwingUI;
+import AquariumSystem.interfaces.Fish;
+import AquariumSystem.simpleaquarium.*;
+import AquariumSystem.controller.AquariumController;
+import AquariumSystem.view.ConsoleUI;
+import AquariumSystem.interfaces.Aquarium;
+import AquariumSystem.view.SwingUI;
 
 
 public class Main {

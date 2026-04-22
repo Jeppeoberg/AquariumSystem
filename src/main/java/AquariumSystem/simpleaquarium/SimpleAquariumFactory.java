@@ -1,6 +1,6 @@
-package Lesson34.AquariumSystem.simpleaquarium;
+package AquariumSystem.simpleaquarium;
 
-import Lesson34.AquariumSystem.interfaces.*;
+import AquariumSystem.interfaces.*;
 
 public class SimpleAquariumFactory implements AquariumFactory {
 
