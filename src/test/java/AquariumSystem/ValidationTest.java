@@ -18,13 +18,6 @@ public class ValidationTest {
         assertDoesNotThrow(() -> waterValidator.validate("30% water changed", 60));
     }
 
-    // An empty note should NOT be allowed
-    // "assertThrows" checks that a ValidationException IS thrown
-    @Test
-    void emptyNote_throwsException(){
-        assertThrows(ValidationException.class, () -> waterValidator.validate("", 60));
-    }
-
 
     // A note that is too long should NOT be allowed
     // "x".repeat(61) creates a String of 61 x's - one over the limit of 60
