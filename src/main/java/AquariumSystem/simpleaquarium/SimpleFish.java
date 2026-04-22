@@ -4,7 +4,7 @@ import AquariumSystem.interfaces.Fish;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleFish {
+public class SimpleFish implements Fish {
     private String name;
     private List<String> healthNotes = new ArrayList<>();
 

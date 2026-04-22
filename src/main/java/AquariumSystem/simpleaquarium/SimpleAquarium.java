@@ -3,7 +3,7 @@ import AquariumSystem.interfaces.Aquarium;
 import AquariumSystem.model.WaterQuality;
 import java.time.LocalDateTime;
 
-public class SimpleAquarium {
+public class SimpleAquarium implements Aquarium {
     private LocalDateTime lastWaterChange;
 
     @Override
