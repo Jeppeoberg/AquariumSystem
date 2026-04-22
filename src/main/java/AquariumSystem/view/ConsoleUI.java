@@ -83,15 +83,17 @@ public class ConsoleUI {
 
         System.out.print("Sundhedsnote: ");
         String note = scanner.nextLine();
+        int numberOfChar = 30;
 
-        controller.registerFishHealth(fish, note);
+        controller.registerFishHealth(fish, note, numberOfChar);
     }
 
     private void changeWater() {
         System.out.print("Note: ");
         String note = scanner.nextLine();
+        int numberOfChar = 60;
 
-        controller.changeWater(note, WaterQuality.GOOD);
+        controller.changeWater(note, WaterQuality.GOOD, numberOfChar);
     }
 
     private Fish selectFish() {
