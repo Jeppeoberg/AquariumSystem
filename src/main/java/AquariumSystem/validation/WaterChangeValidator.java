@@ -9,6 +9,11 @@ public class WaterChangeValidator implements NoteValidation {
         //NoteValidator.validate(note, 60);
         numberOfChar = 60;
 
+        if (note == null || note.isEmpty()) {
+            throw new ValidationException("Noten kan ikke være tom");
+        }
+
+
         if (note.length() > numberOfChar) {
             throw new ValidationException("Beskeden er for lang");
         }
