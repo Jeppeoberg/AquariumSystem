@@ -42,8 +42,10 @@ public class AquariumController {
         FileLogger.log("Fisk fodret");
     }
 
-    public void changeWater(String note, WaterQuality quality) {
-        WaterChangeValidator.validate(note);
+    public void changeWater(String note, WaterQuality quality, int number) {
+        WaterChangeValidator v = new WaterChangeValidator();
+        v.validate(note, number);
+        //WaterChangeValidator.validate(note);
         aquarium.registerWaterChange(note, quality);
         FileLogger.log("Vand skiftet: " + note + " (" + quality + ")");
     }
@@ -52,8 +54,10 @@ public class AquariumController {
         return aquarium.getLastWaterChange();
     }
 
-    public void registerFishHealth(Fish fish, String note) {
-        FishValidator.validateHealthNote(note);
+    public void registerFishHealth(Fish fish, String note, int numberOfChar) {
+        FishValidator fv = new FishValidator();
+        fv.validate(note, numberOfChar);
+        //FishValidator.validateHealthNote(note, numberOfChar);
         fish.registerHealthCheck(note);
         FileLogger.log("Health check: " + fish.getName() + " -> " + note);
     }
