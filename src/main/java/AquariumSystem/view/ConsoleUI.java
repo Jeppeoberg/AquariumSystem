@@ -2,7 +2,6 @@ package AquariumSystem.view;
 
 import AquariumSystem.controller.AquariumController;
 import AquariumSystem.interfaces.Fish;
-import AquariumSystem.model.WaterQuality;
 import AquariumSystem.simpleaquarium.SimpleFish;
 
 import java.util.Scanner;
