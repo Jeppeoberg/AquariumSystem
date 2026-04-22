@@ -14,7 +14,7 @@ public class SimpleAquarium implements Aquarium {
     @Override
     public void registerWaterChange(String note, WaterQuality quality) {
         this.lastWaterChange = LocalDateTime.now();
-        System.out.println("Vandet er skiftet" + note);
+        System.out.println("Vandet er skiftet");
     }
     @Override
     public LocalDateTime getLastWaterChange() {
